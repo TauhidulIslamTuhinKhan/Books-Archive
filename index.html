@@ -14,12 +14,14 @@
 </head>
 
 <body>
+    <!-- Header section start -->
     <header>
         <section>
             <div class="container text-center mt-5">
-                <h2 class="fs-1 fw-bold">Find your favorite books</h2>
+                <h1 class="fs-1 fw-bold">Books Archive</h1>
+                <h2 class="fs-2 fw-bold">Find your favorite books here</h2>
                 <div class="input-group w-50 mx-auto mt-5 mb-3">
-                    <input id="search-field" type="text" class="form-control" placeholder="Input your books"
+                    <input id="search-field" type="text" class="form-control" placeholder="Find your book here"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button onclick="searchItem()" class="btn btn-outline-secondary" type="button"
                         id="search-btn">search</button>
@@ -27,17 +29,26 @@
             </div>
         </section>
     </header>
+     <!-- Header section end -->
     <main>
-        <div class="container text-center">
-            <div id="spinner" class="spinner-grow d-none" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-            <div id="book-number"></div>
-            <div id="error-message"></div>
-            <div id="search-result" class="card mx-auto mt-5 border-0">
-                
+        <!-- Main section start -->
+        <section>
+            <div class="container text-center">                
+                <!-- Result number found div -->
+                <div id="book-number"></div>
+                <!-- Error message div -->
+                <div id="error-message"></div>
+                <!-- Spinner div -->
+                <div id="spinner" class="spinner-grow d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <!-- Search result div -->
+                <div id="search-result" class="card mx-auto mt-5 border-0">
+                    
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- Main section end -->
     </main>
 
 
