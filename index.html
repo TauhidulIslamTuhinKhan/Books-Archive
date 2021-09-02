@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="container text-center mt-5">
+                <h2 class="fs-1 fw-bold">Find your favorite books</h2>
+                <div class="input-group w-50 mx-auto mt-5 mb-3">
+                    <input id="search-field" type="text" class="form-control" placeholder="Input your books"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button onclick="searchItem()" class="btn btn-outline-secondary" type="button"
+                        id="search-btn">search</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container text-center">
+            <div id="spinner" class="spinner-grow d-none" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            <div id="book-number"></div>
+            <div id="error-message"></div>
+            <div id="search-result" class="card mx-auto mt-5 border-0">
+                
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- Main script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
